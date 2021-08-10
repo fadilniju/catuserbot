@@ -180,7 +180,7 @@ async def bot_pms(event):  # sourcery no-metrics
                         user_id, event.text, reply_to=reply_msg
                     )
             except UserIsBlockedError:
-                return await event.reply("𝗧𝗵𝗶𝘀 𝗯𝗼𝘁 𝘄𝗮𝘀 𝗯𝗹𝗼𝗰𝗸𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿. ❌")
+                return await event.reply("𝗧𝗵𝗶𝘀 𝗯𝗼𝘁 𝘄𝗮𝘀 𝗯𝗹𝗼𝗰𝗸𝗲𝗱 𝗯𝘆 𝘁𝗵𝗲 𝘂𝘀𝗲𝗿 myran. ❌")
             except Exception as e:
                 return await event.reply(f"**Error:**\n`{str(e)}`")
             try:
@@ -213,7 +213,7 @@ async def bot_pms_edit(event):  # sourcery no-metrics
         if reply_msg:
             await event.client.send_message(
                 Config.OWNER_ID,
-                f"⬆️ **This message was edited by the user** {_format.mentionuser(get_display_name(chat) , chat.id)} as :",
+                f"⬆️ **This message was edited by that myran** {_format.mentionuser(get_display_name(chat) , chat.id)} as :",
                 reply_to=reply_msg,
             )
             msg = await event.forward_to(Config.OWNER_ID)
@@ -305,7 +305,7 @@ async def bot_start(event):
     users = get_user_id(reply_to)
     if users is None:
         return await info_msg.edit(
-            "**ERROR:** \n`Sorry !, Can't Find this user in my database :(`"
+            "**ERROR:** \n`Sorry !, Can't Find this myr in my database :(`"
         )
     for usr in users:
         user_id = int(usr.chat_id)
@@ -313,7 +313,7 @@ async def bot_start(event):
         break
     if user_id is None:
         return await info_msg.edit(
-            "**ERROR:** \n`Sorry !, Can't Find this user in my database :(`"
+            "**ERROR:** \n`Sorry !, Can't Find this myr in my database :(`"
         )
     uinfo = f"This message was sent by 👤 {_format.mentionuser(user_name , user_id)}\
             \n**First Name:** {user_name}\
