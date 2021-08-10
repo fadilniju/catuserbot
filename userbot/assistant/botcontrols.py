@@ -35,7 +35,7 @@ cmhd = Config.COMMAND_HAND_LER
 async def bot_help(event):
     await event.reply(
         f"""The commands in the bot are:
-**Note : **__This commands work only in this bot__ {botusername}
+**Note : **__This commands work only in this MYRUbot__ {botusername}
 
 • **Cmd : **/uinfo <reply to user message>
 • **Info : **__You have noticed that forwarded stickers/emoji doesn't have forward tag so you can identify the user who sent thoose messages by this cmd.__
