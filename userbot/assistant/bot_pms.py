@@ -104,9 +104,9 @@ async def bot_start(event):
             )
         else:
             start_msg = f"Hey! 👤{mention},\
-                        \nI am {my_mention}'s assistant bot.\
-                        \nYou can contact to my master from here.\
-                        \n\nPowered by [Catuserbot](https://t.me/catuserbot)"
+                        \nI am {my_mention}'s MYRU bot.\
+                        \nninakk entha myre ivde karyam poo poo.\
+                        \n\nPowered by [MYRUbot](https://t.me/fadilp)"
         buttons = [
             (
                 Button.url("Repo", "https://github.com/sandy1709/catuserbot"),
