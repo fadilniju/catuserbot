@@ -51,7 +51,8 @@ async def cmdinfo(input_str, event, plugin=False):
             )
             return None
         await edit_delete(
-            event, f"**hey Fadil ,There is no command as **`{input_str}`** in your bot.**"
+            event,
+            f"**hey Fadil ,There is no command as **`{input_str}`** in your bot.**",
         )
         return None
     except Exception as e:
