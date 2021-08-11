@@ -12,7 +12,7 @@ cmdprefix = Config.COMMAND_HAND_LER
 plugin_category = "tools"
 
 hemojis = {
-    "FADIL": "👮‍♂️",
+    "ADMIN": "👮‍♂️",
     "BOT": "🤖",
     "FUN": "🎨",
     "misc": "🧩",
@@ -47,12 +47,12 @@ async def cmdinfo(input_str, event, plugin=False):
         if plugin:
             await edit_delete(
                 event,
-                f"** Hey Fadil,there is no plugin or command as **`{input_str}`** in your bot.**",
+                f"** there is no plugin or command as **`{input_str}`** in your bot.**",
             )
             return None
         await edit_delete(
             event,
-            f"**hey Fadil ,There is no command as **`{input_str}`** in your bot.**",
+            f"**There is no command as **`{input_str}`** in your bot.**",
         )
         return None
     except Exception as e:
